@@ -11,4 +11,10 @@ The schema follows relational design best practices with clear 1:N and 1:1 relat
 Core flows like session → ticket → fee → payment are separated for better scalability, maintainability, and auditability.
 
 //Smart elevator control
-This ER diagram represents a smart elevator management system within a building environment. It models how buildings contain multiple floors, elevator shafts, and elevators, while users (such as residents or staff) interact with the system by requesting elevator rides. The system tracks elevator assignments, ride logs, and real-time elevator statuses, ensuring efficient movement between floors. It also includes maintenance records to monitor elevator health and servicing, along with mappings between elevators and the floors they serve. Overall, the design captures the complete lifecycle of elevator operations—from user requests and ride execution to monitoring and maintenance—making it suitable for managing a modern automated elevator system.
+
+
+This Entity Relationship (ER) diagram for a smart elevator management system designed for modern buildings. The system models core components such as buildings, floors, elevator shafts, and elevators, along with users who interact with the system.
+
+Users (residents, staff, or admins) can request elevators through floor requests, which are then assigned to available elevators. The system efficiently manages ride assignments and maintains detailed ride logs, capturing information such as source floor, destination floor, and duration. Additionally, elevator status is continuously tracked through status logs, enabling monitoring of states like idle, moving, or under maintenance.
+
+The design also includes elevator-floor mapping to define which floors each elevator can serve, as well as maintenance records to track servicing activities and ensure system reliability. Overall, this ER diagram provides a structured and scalable representation of elevator operations, covering request handling, ride execution, monitoring, and maintenance in a real-world building environment.
